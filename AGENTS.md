@@ -23,25 +23,25 @@ You wake up fresh each session. These files are your continuity:
 
 - **Daily notes:** `memory/YYYY-MM-DD.md` (create `memory/` if needed) — raw logs of what happened
 - **Long-term:** `MEMORY.md` — your curated memories, like a human's long-term memory
-- **Self-improving:** `~/self-improving/` (via `self-improving` skill) — execution-improvement memory (preferences, workflows, style patterns, what improved/worsened outcomes)
-- **Proactivity:** `~/proactivity/` (via `proactivity` skill) - proactive operating state, action boundaries, active task recovery, and follow-through rules
+- **Self-improving:** `~/.openclaw/self-improving/` (via `self-improving` skill) — execution-improvement memory (preferences, workflows, style patterns, what improved/worsened outcomes)
+- **Proactivity:** `~/.openclaw/proactivity/` (via `proactivity` skill) - proactive operating state, action boundaries, active task recovery, and follow-through rules
 
 Use `memory/YYYY-MM-DD.md` and `MEMORY.md` for factual continuity (events, context, decisions).
-Use `~/self-improving/` for compounding execution quality across tasks.
-For compounding quality, read `~/self-improving/memory.md` before non-trivial work, then load only the smallest relevant domain or project files.
-If in doubt, store factual history in `memory/YYYY-MM-DD.md` / `MEMORY.md`, and store reusable performance lessons in `~/self-improving/` (tentative until human validation).
+Use `~/.openclaw/self-improving/` for compounding execution quality across tasks.
+For compounding quality, read `~/.openclaw/self-improving/memory.md` before non-trivial work, then load only the smallest relevant domain or project files.
+If in doubt, store factual history in `memory/YYYY-MM-DD.md` / `MEMORY.md`, and store reusable performance lessons in `~/.openclaw/self-improving/` (tentative until human validation).
 
-Use ~/proactivity/memory.md for durable proactive boundaries, activation preferences, and delivery style.
-Use ~/proactivity/session-state.md for the current objective, last decision, blocker, and next move.
-Use ~/proactivity/memory/working-buffer.md for volatile breadcrumbs during long or fragile tasks.
-Before non-trivial work or proactive follow-up, read ~/proactivity/memory.md and ~/proactivity/session-state.md, then load the working buffer only when recovery risk is high.
+Use ~/.openclaw/proactivity/memory.md for durable proactive boundaries, activation preferences, and delivery style.
+Use ~/.openclaw/proactivity/session-state.md for the current objective, last decision, blocker, and next move.
+Use ~/.openclaw/proactivity/memory/working-buffer.md for volatile breadcrumbs during long or fragile tasks.
+Before non-trivial work or proactive follow-up, read ~/.openclaw/proactivity/memory.md and ~/.openclaw/proactivity/session-state.md, then load the working buffer only when recovery risk is high.
 Treat proactivity as a working style: anticipate needs, check for missing steps, follow through, and leave the next useful move instead of waiting passively.
 
 ### Before any non-trivial task:
-- Read `~/self-improving/memory.md`
-- Read ~/proactivity/memory.md
-- Read ~/proactivity/session-state.md if the task is active or multi-step
-- Read ~/proactivity/memory/working-buffer.md if context is long, fragile, or likely to drift
+- Read `~/.openclaw/self-improving/memory.md`
+- Read ~/.openclaw/proactivity/memory.md
+- Read ~/.openclaw/proactivity/session-state.md if the task is active or multi-step
+- Read ~/.openclaw/proactivity/memory/working-buffer.md if context is long, fragile, or likely to drift
 - Recover from local state before asking the user to repeat recent work
 - Check whether there is an obvious blocker, next step, or useful suggestion the user has not asked for yet
 - Leave one clear next move in state before the final response when work is ongoing
@@ -60,17 +60,17 @@ Treat proactivity as a working style: anticipate needs, check for missing steps,
 
 - **Memory is limited** — if you want to remember something, WRITE IT TO A FILE
 - "Mental notes" don't survive session restarts. Files do.
-- When someone says "remember this" → if it's factual context/event, update `memory/YYYY-MM-DD.md`; if it's a correction, preference, workflow/style choice, or performance lesson, log it in `~/self-improving/`
-- Explicit user correction → append to `~/self-improving/corrections.md` immediately
-- Reusable global rule or preference → append to `~/self-improving/memory.md`
-- Domain-specific lesson → append to `~/self-improving/domains/<domain>.md`
-- Project-only override → append to `~/self-improving/projects/<project>.md`
-- Durable proactive preference or boundary -> append to ~/proactivity/memory.md
-- Current task state, blocker, last decision, or next move -> append to ~/proactivity/session-state.md
-- Volatile breadcrumbs, partial findings, or recovery hints -> append to ~/proactivity/memory/working-buffer.md
-- Repeat proactive win worth reusing -> append to ~/proactivity/patterns.md
-- Proactive action taken or suggested -> append to ~/proactivity/log.md
-- Recurring follow-up worth re-checking later -> append to ~/proactivity/heartbeat.md
+- When someone says "remember this" → if it's factual context/event, update `memory/YYYY-MM-DD.md`; if it's a correction, preference, workflow/style choice, or performance lesson, log it in `~/.openclaw/self-improving/`
+- Explicit user correction → append to `~/.openclaw/self-improving/corrections.md` immediately
+- Reusable global rule or preference → append to `~/.openclaw/self-improving/memory.md`
+- Domain-specific lesson → append to `~/.openclaw/self-improving/domains/<domain>.md`
+- Project-only override → append to `~/.openclaw/self-improving/projects/<project>.md`
+- Durable proactive preference or boundary -> append to ~/.openclaw/proactivity/memory.md
+- Current task state, blocker, last decision, or next move -> append to ~/.openclaw/proactivity/session-state.md
+- Volatile breadcrumbs, partial findings, or recovery hints -> append to ~/.openclaw/proactivity/memory/working-buffer.md
+- Repeat proactive win worth reusing -> append to ~/.openclaw/proactivity/patterns.md
+- Proactive action taken or suggested -> append to ~/.openclaw/proactivity/log.md
+- Recurring follow-up worth re-checking later -> append to ~/.openclaw/proactivity/heartbeat.md
 - When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
