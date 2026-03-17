@@ -1,19 +1,19 @@
 {
   "version": 1,
   "skills": {
-    "skill-vetter": {
+    "security/skill-vetter": {
       "version": "1.0.0",
       "installedAt": 1773709441995
     },
-    "self-improving": {
+    "memory/self-improving": {
       "version": "1.2.16",
       "installedAt": 1773709802720
     },
-    "proactivity": {
+    "productivity/proactivity": {
       "version": "1.0.1",
       "installedAt": 1773710522117
     },
-    "github-cli": {
+    "ai/github-cli": {
       "version": "1.0.0",
       "installedAt": 1773711423029
     }
